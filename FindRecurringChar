@@ -1,0 +1,21 @@
+array1= [2,5,1,2,3,5,1,2,4]
+
+def recurCh (arr1):
+
+    map = {}
+
+    for i in range (0,len(arr1)):
+
+        if arr1[i] in map:
+            return arr1[i]
+
+
+        else:
+
+            map[arr1[i]]=i
+
+    return 0
+        
+            
+x = recurCh(array1)       
+print(x)
